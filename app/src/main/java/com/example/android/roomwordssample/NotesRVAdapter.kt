@@ -31,6 +31,7 @@ class NotesRVAdapter(private val context: Context, private val listener: INotesR
 
     class NotesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtItem: TextView = itemView.findViewById(R.id.txtItem)
+        val txtItemDateCreated: TextView = itemView.findViewById(R.id.txtItemDateCreated)
         val ivDelete: ImageView = itemView.findViewById(R.id.ivDelete)
     }
 
@@ -46,6 +47,7 @@ class NotesRVAdapter(private val context: Context, private val listener: INotesR
     override fun onBindViewHolder(holder: NotesViewHolder, position: Int) {
         val currentNote = allNotes[position]
         holder.txtItem.text = currentNote.text
+        holder.txtItemDateCreated.text = currentNote.createdDate.toString()
     }
 
     override fun getItemCount(): Int {

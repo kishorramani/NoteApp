@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Architecture Component</string>
+    <string name="app_name">NoteApp - Room Database</string>
     <string name="action_settings">Settings</string>
     <string name="hint_note">Add Note…</string>
     <string name="button_save">Save</string>
